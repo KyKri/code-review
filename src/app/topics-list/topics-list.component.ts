@@ -6,8 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topics-list.component.css']
 })
 export class TopicsListComponent implements OnInit {
+  topics = [
+    {
+      name: 'Algorithms'
+    },
+    {
+      name: 'Concepts'
+    },
+    {
+      name: 'Data Structures'
+    }
+  ];
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
