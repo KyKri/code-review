@@ -25,6 +25,6 @@ describe('TopBarComponent', () => {
 
   it('should render Code Review', () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Code Review');
+    expect(compiled.querySelector('a').textContent).toContain('Code Review');
   });
 });
