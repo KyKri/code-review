@@ -26,7 +26,7 @@ describe('TopicsListComponent', () => {
 
   it('should render Code Review Topics in h2 element', () => {
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h2').textContent).toContain('Code Review Topics');
+    expect(compiled.querySelector('h2').textContent).toContain('Topics');
   });
 
   it('should render Algorithms, Concepts and Data Structures in h3 elements', () => {
