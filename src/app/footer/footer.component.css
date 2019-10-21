@@ -1,0 +1,9 @@
+div {
+    position: fixed;
+    bottom: 0em;
+    left: 5em;
+}
+
+p {
+    text-align: center;
+}
