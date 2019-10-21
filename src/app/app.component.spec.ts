@@ -9,6 +9,12 @@ import { Component } from '@angular/core';
 })
 class TopBarStubComponent {}
 
+@Component({
+  selector: 'app-footer',
+  template: ''
+})
+class FooterStubComponent {}
+
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -17,7 +23,8 @@ describe('AppComponent', () => {
       ],
       declarations: [
         AppComponent,
-        TopBarStubComponent
+        TopBarStubComponent,
+        FooterStubComponent
       ],
     }).compileComponents();
   }));
