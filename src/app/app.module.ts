@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopicsListComponent } from './topics-list/topics-list.component';
 import { FooterComponent } from './footer/footer.component';
+import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopBarComponent,
     TopicsListComponent,
-    FooterComponent
+    FooterComponent,
+    AlgorithmsListComponent
   ],
   imports: [
     BrowserModule,
