@@ -1,6 +1,6 @@
 import { IAlgorithm } from './IAlgorithm';
 
-export const Algorithms: IAlgorithm[] = [
+export const algorithms: IAlgorithm[] = [
     {
         name: 'Bubble Sort',
         description: '',
