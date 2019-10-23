@@ -8,13 +8,16 @@ import { Component, OnInit } from '@angular/core';
 export class TopicsListComponent implements OnInit {
   topics = [
     {
-      name: 'Algorithms'
+      name: 'Algorithms',
+      url: 'algorithms'
     },
     {
-      name: 'Concepts'
+      name: 'Concepts',
+      url: ''
     },
     {
-      name: 'Data Structures'
+      name: 'Data Structures',
+      url: ''
     }
   ];
 

@@ -2,13 +2,15 @@
 <div class="container">
     <div class="row">
         <div *ngFor="let topic of topics">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">
-                        <h3>{{ topic.name }}</h3>
+            <a routerLink="{{ topic.url }}">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>{{ topic.name }}</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>

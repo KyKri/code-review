@@ -5,8 +5,8 @@ import { TopicsListComponent } from './topics-list/topics-list.component';
 import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.component';
 
 const routes: Routes = [
-  { path: '', component: TopicsListComponent },
-  { path: 'algorithms', component: AlgorithmsListComponent }
+  { path: 'algorithms', component: AlgorithmsListComponent },
+  { path: '', component: TopicsListComponent }
 ];
 
 @NgModule({
