@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { TopicsListComponent } from './topics-list.component';
 import { By } from '@angular/platform-browser';
@@ -9,6 +10,9 @@ describe('TopicsListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
       declarations: [ TopicsListComponent ]
     })
     .compileComponents();
