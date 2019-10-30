@@ -16,5 +16,25 @@
                 </p>
             </div>
         </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Best Runtime</th>
+                    <th>Average Runtime</th>
+                    <th>Worst Runtime</th>
+                    <th>Space Complexity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let alg of algorithms">
+                    <td>{{ alg.name }}</td>
+                    <td>{{ alg.runtimeComplexities.best }}</td>
+                    <td>{{ alg.runtimeComplexities.average }}</td>
+                    <td>{{ alg.runtimeComplexities.worst }}</td>
+                    <td>{{ alg.spaceComplexity }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
