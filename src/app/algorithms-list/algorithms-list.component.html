@@ -1,5 +1,20 @@
 <div>
-    <div *ngFor="let alg of algorithms">
-        <h3>{{ alg.name }}</h3>
+    <div class="container">
+        <h2>Algorithms</h2>
+        <div class="row">
+            <div class="col-md-4" *ngFor="let alg of algorithms">
+                <h3>{{ alg.name }}</h3>
+                <p>
+                    Runtime Complexities
+                    <li>Best: {{ alg.runtimeComplexities.best }}</li>
+                    <li>Average: {{ alg.runtimeComplexities.average }}</li>
+                    <li>Worst: {{ alg.runtimeComplexities.worst }}</li>
+                </p>
+                <p>
+                    Space Complexity
+                    <li>{{ alg.spaceComplexity }}</li>
+                </p>
+            </div>
+        </div>
     </div>
 </div>
