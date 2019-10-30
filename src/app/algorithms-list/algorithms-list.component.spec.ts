@@ -22,4 +22,9 @@ describe('AlgorithmsListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render Algorithms in h2', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h2').textContent).toContain('Algorithms');
+  });
 });
