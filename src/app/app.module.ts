@@ -7,6 +7,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { TopicsListComponent } from './topics-list/topics-list.component';
 import { FooterComponent } from './footer/footer.component';
 import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.component';
+import { AlgorithmsDetailsComponent } from './algorithms-details/algorithms-details.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.compo
     TopBarComponent,
     TopicsListComponent,
     FooterComponent,
-    AlgorithmsListComponent
+    AlgorithmsListComponent,
+    AlgorithmsDetailsComponent
   ],
   imports: [
     BrowserModule,
