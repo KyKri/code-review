@@ -6,7 +6,7 @@ import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.compo
 import { AlgorithmsDetailsComponent } from './algorithms-details/algorithms-details.component';
 
 const routes: Routes = [
-  { path: 'algorithms-details', component: AlgorithmsDetailsComponent},
+  { path: 'algorithms/details/:algorithmId', component: AlgorithmsDetailsComponent},
   { path: 'algorithms', component: AlgorithmsListComponent },
   { path: '', component: TopicsListComponent }
 ];
