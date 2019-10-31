@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
-import { IAlgorithm } from './IAlgorithm';
-import { algorithms } from './Algorithms';
+import { IAlgorithm } from '../IAlgorithm';
+import { algorithms } from '../Algorithms';
 
 @Component({
   selector: 'app-algorithms-list',
