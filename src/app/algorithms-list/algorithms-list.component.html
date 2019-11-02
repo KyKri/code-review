@@ -13,8 +13,8 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let alg of algorithms">
-                <td><a href="">{{ alg.name }}</a></td>
+            <tr *ngFor="let alg of algorithms; index as algorithmId">
+                <td><a [routerLink]="['/algorithms/details', algorithmId]">{{ alg.name }}</a></td>
                 <td>{{ alg.runtimeComplexities.best }}</td>
                 <td>{{ alg.runtimeComplexities.average }}</td>
                 <td>{{ alg.runtimeComplexities.worst }}</td>
