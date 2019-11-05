@@ -10,7 +10,7 @@ export class AlgorithmsService {
     private http: HttpClient
   ) { }
 
-  getAlgorithms() {
+  public getAlgorithms() {
     return this.http.get('http://localhost:4000/algorithms');
   }
 }
