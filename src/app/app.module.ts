@@ -10,6 +10,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.component';
 import { AlgorithmsDetailsComponent } from './algorithms-details/algorithms-details.component';
 
+import { AlgorithmsService } from './algorithms.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +26,9 @@ import { AlgorithmsDetailsComponent } from './algorithms-details/algorithms-deta
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AlgorithmsService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
