@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { IAlgorithm } from '../IAlgorithm';
 import { algorithms } from '../Algorithms';
 
+import { AlgorithmsService } from '../algorithms.service';
+
 @Component({
   selector: 'app-algorithms-list',
   templateUrl: './algorithms-list.component.html',
@@ -11,10 +13,17 @@ import { algorithms } from '../Algorithms';
 export class AlgorithmsListComponent implements OnInit {
   algorithms: IAlgorithm[];
 
-  constructor() { }
+  constructor(
+    private algorithmsService: AlgorithmsService
+  ) { }
 
   ngOnInit() {
-    this.algorithms = algorithms;
+    this.algorithmsService.getAlgorithms()
+      .subscribe((data: IAlgorithm[]) => {
+        this.algorithms = data;
+        console.log("Data requested...");
+        console.log(this.algorithms);
+      });
   }
 
 }
