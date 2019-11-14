@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
 import { IAlgorithm } from '../IAlgorithm';
-import { algorithms } from '../Algorithms';
 
 import { AlgorithmsService } from '../algorithms.service';
 
@@ -21,7 +20,7 @@ export class AlgorithmsListComponent implements OnInit {
     this.algorithmsService.getAlgorithms()
       .subscribe((data: IAlgorithm[]) => {
         this.algorithms = data;
-        console.log("Data requested...");
+        console.log('Data requested...');
         console.log(this.algorithms);
       });
   }
