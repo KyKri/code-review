@@ -2,6 +2,7 @@ import { IAlgorithm } from './IAlgorithm';
 
 export const algorithms: IAlgorithm[] = [
     {
+        _id: '',
         name: 'Bubble Sort',
         description: `Bubble sort, sometimes referred to as sinking sort,
          is a simple sorting algorithm that repeatedly steps through the list,
@@ -14,6 +15,7 @@ export const algorithms: IAlgorithm[] = [
         spaceComplexity: 'O(1)',
     },
     {
+        _id: '',
         name: 'Mergesort',
         description: `Conceptually, a merge sort works as follows:
          1. Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).
@@ -26,6 +28,7 @@ export const algorithms: IAlgorithm[] = [
         spaceComplexity: 'O(n)',
     },
     {
+        _id: '',
         name: 'Quicksort',
         description: `Quicksort is a comparison sort, meaning that it can sort items of any type for which a "less-than" relation (formally, a total order) is defined.
          Efficient implementations of Quicksort are not a stable sort, meaning that the relative order of equal sort items is not preserved.
