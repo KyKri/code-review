@@ -21,7 +21,6 @@ export class AlgorithmsListComponent implements OnInit {
       .subscribe((data: IAlgorithm[]) => {
         this.algorithms = data;
         console.log('Data requested...');
-        console.log(this.algorithms);
       });
   }
 
