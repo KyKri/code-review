@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 import { AlgorithmsDetailsComponent } from './algorithms-details.component';
 import { RouterTestingModule } from '@angular/router/testing';
@@ -11,6 +12,7 @@ describe('AlgorithmsDetailsComponent', () => {
     TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
+        HttpClientTestingModule
       ],
       declarations: [ AlgorithmsDetailsComponent ]
     })

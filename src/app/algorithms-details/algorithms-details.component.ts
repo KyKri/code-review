@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 
-import { algorithms } from '../Algorithms';
+import { IAlgorithm } from '../IAlgorithm';
+import { AlgorithmsService } from '../algorithms.service';
 
 @Component({
   selector: 'app-algorithms-details',
@@ -10,16 +11,20 @@ import { algorithms } from '../Algorithms';
   styleUrls: ['./algorithms-details.component.css']
 })
 export class AlgorithmsDetailsComponent implements OnInit {
-  algorithm;
-  
+  algorithm: IAlgorithm;
+
   constructor(
     private route: ActivatedRoute,
-    private location: Location
+    private location: Location,
+    private algorithmsService: AlgorithmsService
   ) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
-      this.algorithm = algorithms[+params.get('algorithmId')];
+      this.algorithmsService.getAlgorithmById(params.get('algorithmId'))
+        .subscribe((data: IAlgorithm) => {
+          this.algorithm = data;
+        });
     });
   }
 
