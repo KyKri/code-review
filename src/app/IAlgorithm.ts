@@ -1,5 +1,5 @@
 export interface IAlgorithm {
-    _id: string;
+    _id?: string;
     name: string;
     description: string;
     runtimeComplexities: {

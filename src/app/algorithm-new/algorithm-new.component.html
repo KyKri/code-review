@@ -1,1 +1,42 @@
-<p>algorithm-new works!</p>
+<div class="page-header">
+    <h2>New Algorithm</h2>
+</div>
+<form class="algorithm-form" [formGroup]="newAlgorithmForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label>
+            Name
+        </label>
+        <input class="form-control" type="text" formControlName="name">
+    </div>
+    <div class="form-group">
+        <label>
+            Description
+        </label>
+        <input class="form-control" type="text" formControlName="description">
+    </div>
+    <div class="form-group">
+        <label>
+            Best Runtime Complexity
+        </label>
+        <input class="form-control" type="text" formControlName="best">
+    </div>
+    <div class="form-group">
+        <label>
+            Average Runtime Complexity
+        </label>
+        <input class="form-control" type="text" formControlName="average">
+    </div>
+    <div class="form-group">
+        <label>
+            Worst Runtime Complexity
+        </label>
+        <input class="form-control" type="text" formControlName="worst">
+    </div>
+    <div class="form-group">
+        <label>
+            Space Complexity
+        </label>
+        <input class="form-control" type="text" formControlName="spaceComplexity">
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

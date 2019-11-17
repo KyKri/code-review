@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AlgorithmNewComponent } from './algorithm-new.component';
 
@@ -10,7 +11,10 @@ describe('AlgorithmNewComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ AlgorithmNewComponent ],
-      imports: [ HttpClientTestingModule ]
+      imports: [
+        HttpClientTestingModule,
+        ReactiveFormsModule
+       ]
     })
     .compileComponents();
   }));
