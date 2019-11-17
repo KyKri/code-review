@@ -11,6 +11,7 @@ import { AlgorithmsListComponent } from './algorithms-list/algorithms-list.compo
 import { AlgorithmsDetailsComponent } from './algorithms-details/algorithms-details.component';
 
 import { AlgorithmsService } from './algorithms.service';
+import { AlgorithmNewComponent } from './algorithm-new/algorithm-new.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AlgorithmsService } from './algorithms.service';
     TopicsListComponent,
     FooterComponent,
     AlgorithmsListComponent,
-    AlgorithmsDetailsComponent
+    AlgorithmsDetailsComponent,
+    AlgorithmNewComponent
   ],
   imports: [
     BrowserModule,
